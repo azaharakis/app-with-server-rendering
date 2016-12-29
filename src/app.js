@@ -1,1 +1,2 @@
-console.log('hello world');
+require('babel-register');
+require('./server');
