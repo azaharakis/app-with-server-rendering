@@ -7,5 +7,10 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./src/app.js"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.1.4",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-register": "^6.18.0"
   }
 }
