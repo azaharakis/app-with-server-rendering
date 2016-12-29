@@ -1,0 +1,8 @@
+{
+  "name": "app-with-server-rendering",
+  "version": "0.0.1",
+  "description": "A basic application that demonstrates serverside rendering",
+  "repository": "git@github.com:azaharakis/app-with-server-rendering.git",
+  "author": "Alexander Zaharakis <alex.zaharakis@rea-group.com>",
+  "license": "MIT"
+}
