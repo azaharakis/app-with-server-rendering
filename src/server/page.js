@@ -6,6 +6,7 @@ export default `
     </head>
     <body>
         Hello world
+        <script src="/public/bundle.js"></script>
     </body>
 </html>
 `;
