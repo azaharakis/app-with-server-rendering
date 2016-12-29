@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 
 import express from 'express';
+import path from 'path';
 import middleware from './middleware';
 
 const app = express();
@@ -8,6 +9,7 @@ const app = express();
 app.set('host', process.env.HOST || "0.0.0.0");
 app.set('port', process.env.PORT || 3001);
 
+app.use('/public', express.static(path.join(__dirname, '../../public')));
 app.get('/', middleware);
 
 app.listen(app.get('port'), app.get('host'), () => {
