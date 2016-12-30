@@ -17,5 +17,10 @@ within the application.
 ## Run the application
 `npm run start` or `yarn start`
 
+## Develop the application
+`npm run dev` or `yarn dev`
+This will restart the server and recompile the client side assets whenever a file has been changed
+within the project
+
 ## Linting and Testing
 `npm run lint` or `yarn lint`
