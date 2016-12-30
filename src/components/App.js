@@ -1,3 +1,4 @@
+import './main.css';
 import React from 'react';
 import PropertyCard from './property-card';
 import mockData from '../server/mockData.json'
