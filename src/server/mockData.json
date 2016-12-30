@@ -1,0 +1,17 @@
+[
+  {
+    "image": "https://i2.au.reastatic.net/400x300/d735c9ef4a3fffe6c212a8008a89f97e1e465a64461489cd6cdadb855ad7ee0d/main.jpg",
+    "address": "123 Fake street",
+    "type": "house"
+  },
+  {
+    "image": "https://i2.au.reastatic.net/400x300/78505655419944e4c58c753435a6f6b6ec8934641bc724570a07733db1a48067/main.jpg",
+    "address": "123 Smith street",
+    "type": "house"
+  },
+  {
+    "image": "https://i2.au.reastatic.net/400x300/be36162503aca7ddc483b2ff184853a416b4c38673def09b420ab9eeb21f8fc8/main.jpg",
+    "address": "12 George street",
+    "type": "apartment"
+  }
+]
