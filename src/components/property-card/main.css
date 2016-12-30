@@ -1,0 +1,14 @@
+.property-card {
+    overflow: hidden;
+    width:400px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-family: Helvetica;
+    background:#fff;
+    border-bottom: solid 2px #ccc;
+}
+
+.property-card__content {
+    text-align:center;
+    padding: 5px;
+}
