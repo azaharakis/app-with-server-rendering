@@ -1,3 +1,4 @@
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     devtool: "#inline-source-map",
     "entry": "./src/client",
@@ -13,11 +14,15 @@ module.exports = {
             },
             {
                 test:/\.css$/,
-                loader: 'style-loader!css-loader'
+                loader: ExtractTextPlugin.extract('style-loader','css-loader')
             }
         ]
     },
+    plugins: [
+        new ExtractTextPlugin('styles.css')
+    ],
     "output": {
-        filename: './public/bundle.js'
+        path: './public',
+        filename: 'bundle.js'
     }
 };
