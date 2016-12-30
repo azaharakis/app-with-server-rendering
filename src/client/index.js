@@ -1,4 +1,5 @@
-export default (() => {
-    console.log('this code is executed on the client side');
-})();
+import reactDOM from 'react-dom';
+import React from 'react';
+import App from '../components/App';
 
+reactDOM.render(<App />, document.getElementById("wrapper"));
