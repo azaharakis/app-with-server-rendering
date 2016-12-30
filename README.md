@@ -16,3 +16,6 @@ within the application.
 
 ## Run the application
 `npm run start` or `yarn start`
+
+## Linting and Testing
+`npm run lint` or `yarn lint`

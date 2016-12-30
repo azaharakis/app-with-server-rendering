@@ -6,11 +6,16 @@
   "author": "Alexander Zaharakis <alex.zaharakis@rea-group.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/app.js"
+    "start": "node ./src/app.js",
+    "lint": "eslint ./src"
   },
   "dependencies": {
     "babel-preset-env": "^1.1.4",
     "babel-preset-stage-2": "^6.18.0",
     "babel-register": "^6.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-plugin-react": "^6.8.0"
   }
 }
