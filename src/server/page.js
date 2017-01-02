@@ -1,4 +1,4 @@
-export default (app) => `
+export default (app, data) => `
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +7,9 @@ export default (app) => `
     </head>
     <body>
         <div id="wrapper">${app}</div>
+        <script>
+            var __hydrationData__ = ${JSON.stringify(data)};
+        </script>
         <script src="/public/bundle.js"></script>
     </body>
 </html>
