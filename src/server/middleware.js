@@ -5,8 +5,10 @@ import App from '../components/App';
 import page from './page';
 
 export default (request, response) => {
-    const applicationString = ReactDOMServer.renderToString(<App />);
-    const pageResponse = page(applicationString);
+    App.fetchData().then(data => {
+        const applicationString = ReactDOMServer.renderToString(<App data={data}/>);
+        const pageResponse = page(applicationString, data);
 
-    return response.status(200).send(pageResponse);
+        return response.status(200).send(pageResponse);
+    });
 }
