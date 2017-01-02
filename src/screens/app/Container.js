@@ -2,11 +2,12 @@
 
 import './main.css';
 import React, { Component } from 'react';
-import PropertyCard from './property-card';
-import type { Property } from '../types/Property';
+import { connect } from 'react-redux';
+import PropertyCard from '../../components/property-card';
+import type { Property } from '../../types/Property';
 import type { Fetch } from 'isomorphic-fetch';
 
-export default class App extends Component {
+class App extends Component {
     props: {
         data: Array<Property>
     }
@@ -29,3 +30,12 @@ export default class App extends Component {
         );
     }
 }
+
+/*
+    Connecting to the Redux store:
+    http://redux.js.org/docs/basics/UsageWithReact.html#implementing-container-components
+*/
+
+const mapStateToProps = ({ apiData }) => ({ data: apiData });
+
+export default connect(mapStateToProps)(App);

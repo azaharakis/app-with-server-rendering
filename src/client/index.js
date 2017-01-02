@@ -1,9 +1,11 @@
 import '../shared/polyfills';
 import reactDOM from 'react-dom';
-import React from 'react';
-import App from '../components/App';
+import createAppFromRedux from '../shared/createAppFromRedux';
+import { default as App } from '../screens/app';
 
-const renderApp = (data) => reactDOM.render(<App data={data}/>, document.getElementById("wrapper"));
+const renderApp = (data) => {
+    reactDOM.render(createAppFromRedux(App, data), document.getElementById("wrapper"));
+};
 
 export default (() => {
     if (window.__hydrationData__) {
