@@ -10,7 +10,7 @@ type props = {
     }
 }
 
-class App extends Component {
+export class App extends Component {
     shouldComponentUpdate (nextProps: props) {
         return !nextProps.apiData.fetchingData;
     }

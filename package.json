@@ -12,7 +12,9 @@
     "dev": "concurrently 'npm run watch' 'forever --watch ./src/app.js'",
     "lint": "eslint ./src",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
-    "test": "npm run lint && npm run flow"
+    "unit": "jest test",
+    "unit-watch": "jest test --watch",
+    "test": "npm run lint && npm run flow && npm run unit"
   },
   "dependencies": {
     "babel-preset-env": "^1.1.4",
@@ -31,17 +33,27 @@
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-eslint": "^7.1.1",
+    "babel-jest": "^18.0.0",
     "babel-loader": "^6.2.10",
     "concurrently": "^3.1.0",
     "css-loader": "^0.26.1",
+    "enzyme": "^2.7.0",
     "eslint": "^3.12.2",
     "eslint-plugin-flowtype": "^2.29.2",
     "eslint-plugin-react": "^6.8.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "flow-bin": "^0.37.4",
     "forever": "^0.15.3",
+    "jest": "^18.1.0",
     "json-loader": "^0.5.4",
+    "react-addons-test-utils": "^15.4.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }
