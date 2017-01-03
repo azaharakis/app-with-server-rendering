@@ -12,7 +12,7 @@ app.set('port', process.env.PORT || 3001);
 
 app.use('/public', express.static(path.join(__dirname, '../../public')));
 app.get('/api', mockAPI);
-app.get('/', middleware);
+app.use('/', middleware);
 
 app.listen(app.get('port'), app.get('host'), () => {
     console.log(`server listening on http://${app.get('host')}:${app.get('port')}`);
