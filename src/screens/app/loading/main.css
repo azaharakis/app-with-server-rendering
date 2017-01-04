@@ -1,0 +1,16 @@
+.loader {
+    position: fixed;
+    background: rgba(51, 63, 72, 0.95);
+    width:75px;
+    height: 75px;
+    line-height: 75px;
+    margin: -37px 0 0 -37px;
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    z-index: 999;
+    visibility: visible;
+}

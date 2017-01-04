@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Loader from './loading';
 
 type props = {
     apiData: {
@@ -18,6 +19,7 @@ export class App extends Component {
     render () {
         return (
             <div>
+                <Loader/>
                 { React.cloneElement(this.props.children, { data: this.props.apiData.data }) }
             </div>
         );

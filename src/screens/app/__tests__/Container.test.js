@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { App } from '../Container';
+import Loader from '../loading';
 
 describe("App", () => {
     // In the context of an App screen it has a child of a sub-route (screen) this could be any component, lets just create one
@@ -18,7 +19,10 @@ describe("App", () => {
     );
 
     it("renders the apps children with API data", () => {
-        expect(test.contains([<Screen data="Some API Data" />])).toBe(true);
+        expect(test.contains([
+            <Loader />,
+            <Screen data="Some API Data" />
+        ])).toBe(true);
     });
 
     it("won't re-render fetchingData is true", () => {

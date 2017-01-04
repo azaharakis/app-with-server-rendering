@@ -12,9 +12,14 @@ export default class Results extends Component {
     }
 
     static fetchData (): Fetch {
-        return fetch('http://localhost:3001/api')
-            .then(response => response.json())
-            .then(properties => properties);
+        return new Promise((resolve) => {
+            // Wait 1 second before making a request to simulate a poor connection.
+            setTimeout(() => {
+                fetch('http://localhost:3001/api')
+                    .then(response => response.json())
+                    .then(properties => resolve(properties))
+            }, 1000);
+        });
     }
 
     renderProperties () {
