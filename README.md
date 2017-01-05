@@ -19,3 +19,7 @@ within the application.
 
 ## Linting and Testing
 `npm run lint` or `yarn lint`
+
+# Lesson 3
+- [Lesson](./PROBLEM.md) 
+- [Solution](https://github.com/azaharakis/app-with-server-rendering/compare/1d3e542...a022656)
