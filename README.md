@@ -24,3 +24,7 @@ within the project
 
 ## Linting and Testing
 `npm run lint` or `yarn lint`
+
+# Lesson 4
+- [Lesson](./PROBLEM.md) 
+- [Solution](https://github.com/azaharakis/app-with-server-rendering/compare/93fb5f6...03dd76b)
