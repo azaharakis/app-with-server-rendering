@@ -11,6 +11,12 @@ within the application.
 - [NVM](https://github.com/creationix/nvm) Node version manager
 - [Yarn package manager](https://yarnpkg.com/) An alternative to NPM
 
+NVM is a version manager for node which is a good option if you don't have node installed use NVM:
+> https://github.com/creationix/nvm/blob/master/README.markdown
+
+For a smoother experience with package management it is ideal to use `yarn`over NPM
+`npm install -g yarn`
+
 ## Prior to starting the application
 `npm install` or `yarn`
 
